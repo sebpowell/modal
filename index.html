@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<script src="js.js"></script>
+	<script>
+		$(document).ready(function() {
+			$(".modal").modal({
+				modalShowClass: "show", 
+				transitionSpeed: "0.5s"
+			});
+		});
+	</script>
+</head>
+<body>
+	<div class="modal-backdrop"></div>
+	<a href="" data-modal="login-modal">Login Modal</a>
+	<a href="" data-modal="newsletter-modal">Newsletter Modal</a>
+	
+	<div class="modal" id="login-modal">
+		Login
+		<button data-modal="modal-close">Close</button>
+	</div>
+	
+	<div class="modal" id="newsletter-modal">
+		Newsletter
+		<button data-modal="modal-close">Close</button>
+	</div>
+</body>
+</html>
